@@ -1,7 +1,7 @@
 
 
 {% load i18n %}
-{% load {{ project_name }}_filters %}
+{% templatetag openblock %} load {{ project_name }}_filters  {% templatetag closeblock %} 
 {% load account %}
 {% load url from future %}
 
