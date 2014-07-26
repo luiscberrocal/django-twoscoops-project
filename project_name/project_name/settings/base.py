@@ -254,10 +254,10 @@ SOUTH_TESTS_MIGRATE = False
 
 ########## ALLAUTH CONFIGURATION
 # See: http://south.readthedocs.org/en/latest/installation.html#configuring-your-django-installation
-#TEMPLATE_CONTEXT_PROCESSORS += (
-#    "allauth.account.context_processors.account",
-#    "allauth.socialaccount.context_processors.socialaccount",
-#)
+TEMPLATE_CONTEXT_PROCESSORS += (
+    "allauth.account.context_processors.account",
+    "allauth.socialaccount.context_processors.socialaccount",
+)
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
     "django.contrib.auth.backends.ModelBackend",
