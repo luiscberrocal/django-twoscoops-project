@@ -2,8 +2,8 @@
 
 {% load i18n %}
 {% templatetag openblock %} load {{ project_name }}_filters  {% templatetag closeblock %} 
-{% load account %}
-{% load url from future %}
+{% templatetag openblock %}  load account {% templatetag closeblock %} 
+{% templatetag openblock %} load url from future {% templatetag closeblock %} 
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
